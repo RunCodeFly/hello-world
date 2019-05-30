@@ -1,4 +1,4 @@
-#include <QApplication>
+﻿#include <QApplication>
 #include <QDialog>
 #include <QLabel>
 #include "ui_hellodialog.h"
@@ -10,17 +10,20 @@ int main(int argc,char* argv[])
 
     QDialog w;
 
-    Ui::HelloDialog ui;
+    //Ui::HelloDialog ui;
 
-    ui.setupUi(&w);
+    //ui.setupUi(&w);
 
 //    w.resize(400,300);
+    w.resize(400,300);
+    QLabel label(&w);
 
 //    QLabel label(&w);
 
 //    label.move(120,120);
 
-//    label.setText(QObject::tr("Hello World"));
+    label.move(120,120);
+    label.setText(QObject::tr("Hello World"));
 
     w.show();
 
