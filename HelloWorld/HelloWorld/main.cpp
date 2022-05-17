@@ -25,6 +25,9 @@ int main(int argc,char* argv[])
     label.move(120,120);
     label.setText(QObject::tr("Hello World"));
 
+
+    //test github
+
     w.show();
 
     return a.exec();
